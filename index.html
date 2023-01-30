@@ -69,7 +69,7 @@
                         class="p-3 nav-link fw-bold z-1-ab w-100 text-dark">Home</a></li>
 
                 <li class="border-b-ab fs-5 text-nav-link-ab"><a href="#évènements"
-                        class="p-3 nav-link fw-bold z-1-ab w-100 text-dark">évènements</a></li>
+                        class="p-3 nav-link fw-bold z-1-ab w-100 text-dark">Évènements</a></li>
 
                 <li class="border-b-ab fs-5 text-nav-link-ab"><a href="#formations"
                         class="p-3 nav-link fw-bold z-1-ab w-100 text-dark">Formations</a></li>
@@ -297,7 +297,7 @@
             <h4 class="display-6 text-center text-muted my-4">Les étudiants et les étudiantes doivent suivre
                 les
                 formations que nous organisons à l'aide de ces programmes</h4>
-            <div class="w-75">
+            <div class="w-auto">
 
                 <div class="card bg-dark text-white my-4">
                     <img src="./assets/parcours.jpg" class="card-img" alt="...">
@@ -615,71 +615,72 @@
                 </div>
             </section>
         </div>
+
+
+        <!-- À ne pas changer son emplacements -->
+        <div class="loader-container-ab">
+            <div class="fadeLoad-ab">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </div>
+        <!-- Miijack's Section -->
+        <section id="contact">
+            <div class="container-fluid bg-white pb-5">
+                <!-- No animation on this part -->
+                <div class="row fade-scroll-ab" data-fade-show=".3s">
+                    <div class="col col-lg-12">
+                        <h2>Restez en contact avec nous</h2>
+                        <p class="top">Bienvenue dans notre université ! Nous sommes heureux de vous accueillir et nous
+                            sommes toujours prêts à vous aider.
+                            <br>N'hésitez pas à nous contacter pour toute question ou préoccupation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center fade-scroll-ab" data-fade-show=".5s">
+                    <div class="col col-lg-3 col-sm-4 col-md-4">
+                        <article>
+                            <i class="fa-solid fa-location-pin"></i>
+                            <h3>Address</h3>
+                            <span>II J 161 R Ambodivoanjo Ivandry <br> 101, Antananarivo</span>
+                        </article>
+                    </div>
+
+                    <div class="col col-lg-3 col-sm-4 col-md-4">
+                        <article>
+                            <i class="fa-solid fa-envelope"></i>
+                            <h3>E-mail</h3>
+                            <span>contact@hei.school</span>
+                        </article>
+                    </div>
+
+                    <div class="col col-lg-3 col-sm-4 col-md-4">
+                        <article>
+                            <i class="fa-solid fa-square-phone"></i>
+                            <h3>Phone</h3>
+                            <span>+261 34 94 041 16</span>
+                        </article>
+                    </div>
+
+
+                </div>
+
+                <div class="row fade-scroll-ab" data-fade-show=".9s">
+                    <div class="col col-lg-12">
+                        <form>
+                            <input type="text" placeholder="Email">
+                            <textarea placeholder="Message"></textarea>
+                            <a href="#">Envoyer Message</a>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
-
-    <!-- À ne pas changer son emplacements -->
-    <div class="loader-container-ab">
-        <div class="fadeLoad-ab">
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-        </div>
-    </div>
-    <!-- Miijack's Section -->
-    <section id="contact">
-        <div class="container-fluid bg-white pb-5">
-            <!-- No animation on this part -->
-            <div class="row fade-scroll-ab" data-fade-show=".3s">
-                <div class="col col-lg-12">
-                    <h2>Restez en contact avec nous</h2>
-                    <p class="top">Bienvenue dans notre université ! Nous sommes heureux de vous accueillir et nous
-                        sommes toujours prêts à vous aider.
-                        <br>N'hésitez pas à nous contacter pour toute question ou préoccupation.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row justify-content-center fade-scroll-ab" data-fade-show=".5s">
-                <div class="col col-lg-3 col-sm-4 col-md-4">
-                    <article>
-                        <i class="fa-solid fa-location-pin"></i>
-                        <h3>Address</h3>
-                        <span>II J 161 R Ambodivoanjo Ivandry <br> 101, Antananarivo</span>
-                    </article>
-                </div>
-
-                <div class="col col-lg-3 col-sm-4 col-md-4">
-                    <article>
-                        <i class="fa-solid fa-envelope"></i>
-                        <h3>E-mail</h3>
-                        <span>contact@hei.school</span>
-                    </article>
-                </div>
-
-                <div class="col col-lg-3 col-sm-4 col-md-4">
-                    <article>
-                        <i class="fa-solid fa-square-phone"></i>
-                        <h3>Phone</h3>
-                        <span>+261 34 94 041 16</span>
-                    </article>
-                </div>
-
-
-            </div>
-
-            <div class="row fade-scroll-ab" data-fade-show=".9s">
-                <div class="col col-lg-12">
-                    <form>
-                        <input type="text" placeholder="Email">
-                        <textarea placeholder="Message"></textarea>
-                        <a href="#">Envoyer Message</a>
-                    </form>
-                </div>
-            </div>
-
-        </div>
-    </section>
 
     <footer>
         <div class="container-fluid">
@@ -712,34 +713,38 @@
                 <div class="col col-lg-8 col-sm-8 col-md-8">
                     <div class="row">
                         <div class="col col-lg-3 col-sm-6 col-md-3">
-                            <a href="https://hei.school/events/">Events</a>
-                        </div>
-                        <div class="col col-lg-3 col-sm-6 col-md-3">
+                            <a href="https://hei.school/events/">Évènements</a>
+                            <a href="https://bit.ly/programmepedagogiqueHEI2022">Programmes</a>
+                            <a href="http://calendar.hei.school/">Calendar</a>
                             <a href="https://hei.school/case-studies/">Case studies</a>
                         </div>
                         <div class="col col-lg-3 col-sm-6 col-md-3">
                             <a href="http://www.alliancefr.mg/">Alliance Française</a>
                         </div>
                         <div class="col col-lg-3 col-sm-6 col-md-3">
-                            <a href="https://bit.ly/programmepedagogiqueHEI2022">Programmes</a>
-                            <a href="http://calendar.hei.school/">Calendar</a>
+                            <a href="#formations">Formations</a>
+                            <a href="#parcours">Parcours</a>
+                            <a href="#team-ab">Notre équipe</a>
+                            <a href="#statistics">Statistics</a>
+                        </div>
+                        <div class="col col-lg-3 col-sm-6 col-md-3">
+                            <a href="#contact">Contact</a>
+                            <a href="#home-ab">Home</a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </footer>
     <script src="./js/jquery-3.6.3.min.js"></script>
     <!-- Javascript for the stats counter | Kirisaki_VK -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.js"></script>
-    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
-    <script src="js/kirisaki-vk_counter.js"></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+    <script src="./js/kirisaki-vk_counter.js"></script>
     <!-- Javascript for the more to show up on Hover -->
-    <script src="js/kirisaki-vk_more.js"></script>
+    <script src="./js/kirisaki-vk_more.js"></script>
     <!-- ___  -->
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/bootstrap.js"></script>
     <script src="./js/fallback.js"></script>
     <script src="./js/app.js"></script>
 </body>
