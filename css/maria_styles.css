@@ -1,3 +1,8 @@
 .backgound-dark{
     background-color: rgba(0, 0, 0, 0.795);
 }
+
+.x-overflow-fix{
+    overflow: hidden;
+    width: 100%;
+}
