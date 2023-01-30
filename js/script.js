@@ -49,7 +49,6 @@ $(window).scroll(function() {
 
 
 
-
 //SIde BAr MEnu JS
 /**
    * Slide right instantiation and action.
