@@ -101,3 +101,15 @@ blockquote::before{
     padding-inline: 0.2rem;
 }
 
+.kirisaki_vk-link-styles{
+    text-decoration: none;
+    color: white;
+}
+
+.kirisaki_vk-link-styles *{
+    margin-bottom: 10px;
+}
+
+.kirisaki_vk-link-styles:hover{
+    color: var(--yellow-hei);
+}
