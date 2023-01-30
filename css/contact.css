@@ -60,7 +60,7 @@ body {
 }
 
 #contact form a:hover {
-    background: #fcaf3b;
+    background: var(--yellow-hei);
     color: #010101;
     transition: all 0.5s;
 }
@@ -116,7 +116,7 @@ footer .mesg button {
 }
 
 footer .mesg button:hover {
-    background: #fcaf3b;
+    background: var(--yellow-hei);
 }
 
 footer a,
@@ -126,7 +126,7 @@ footer address {
 }
 
 footer a:hover {
-    color: #fcaf3b;
+    color: var(--yellow-hei);
 }
 
 .active {
