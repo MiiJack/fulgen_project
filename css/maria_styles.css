@@ -6,3 +6,9 @@
     overflow: hidden;
     width: 100%;
 }
+
+@media (max-width: 576px) {
+    .maria-width {
+      width: auto !important;
+    }
+  }
