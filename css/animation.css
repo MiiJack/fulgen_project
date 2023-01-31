@@ -1,0 +1,37 @@
+.scroll-aniation-gp{
+    opacity: 0;
+}
+.fade-scroll-gp{
+    animation-name: fade-scroll;
+    animation-duration: .3s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+@keyframes fade-scroll {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.fade-scale-gp{
+    animation-name: fade-scale;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+@keyframes fade-scale {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
