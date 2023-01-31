@@ -104,6 +104,7 @@ footer .mesg input {
 
 footer .mesg button {
     width: fit-content;
+    width: -moz-fit-content;
     margin-left: 10px;
     background: #fff;
     border: 0;
