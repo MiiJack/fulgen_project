@@ -1,0 +1,14 @@
+.backgound-dark{
+    background-color: rgba(0, 0, 0, 0.795);
+}
+
+.x-overflow-fix{
+    overflow: hidden;
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .maria-width {
+      width: auto !important;
+    }
+  }
