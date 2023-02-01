@@ -1,0 +1,104 @@
+*{
+    font-family: "Source Sans Pro",Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.text-white-gp{
+    color: white;
+    text-decoration: none;
+}
+.link-white-gp{
+    color: white;
+    text-decoration: none;
+}
+.link-white-gp:hover{
+    color: var(--Yellow-hei);
+    text-decoration: none;
+}
+.text-black-gp{
+    color: black;
+}
+.z-top-section{
+    z-index: 2;
+}
+
+.backdrop-blur{
+    z-index: 5000;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+    transition: .3s;
+    position: fixed;
+    left: -100%;
+}
+.appear{
+    transition: .3s;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width : 573px) {
+    .navbar-side-gp{
+        width: 100% !important;
+    }
+}
+@media (max-width : 992px) {
+    .navbar-side-gp{
+        width: 300px;
+    }
+}
+@media (min-width : 992px) {
+    .navbar-side-gp{
+        width: 25%;
+    }
+}
+
+
+
+
+/* animation scrolling */
+.scroll-anim{
+    opacity: 0;
+}
+.setFade{
+    opacity: 0;
+}
+
+.fadeIn{
+    animation-name: fade;
+    animation-duration: .32s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+@keyframes fade {
+    100%{
+        opacity: 1;
+    }
+}
+.scaleFade{
+    animation-name: scalefade;
+    animation-duration: .4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+@keyframes scalefade {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+:root{
+    --Yellow-hei : #fcaf3b;
+}
+
+.title-hei{
+    font-family: 'EB Garamond';
+}
