@@ -11,7 +11,7 @@ $(window).on("scroll",function() {
             $('header').addClass("marginize-top-ab");
         }, 100);
     }
-    scrollInit(".scroll-aniation-gp",$(window).scrollTop())
+    scrollInit(".scroll-animation-gp",$(window).scrollTop())
 });
 
 
@@ -61,9 +61,9 @@ $(".fade-animation-showing-ab").each(function(i,elem){
 
 
 function scrollInit(e,container){
-    let scrollTriggerAnim = [...document.querySelectorAll(".scroll-aniation-gp")];
+    let scrollTriggerAnim = [...document.querySelectorAll(e)];
     scrollTriggerAnim.forEach((value,i,element)=>{
-        if(container >= (element[i].getBoundingClientRect().top*4)){
+        if(container >= (element[i].getBoundingClientRect().top*(1))){
             element[i].classList.add($(element[[i]]).attr("data-type-anim"))
             element[i].style.animationDelay = $(element[i]).attr("data-fade-show")
         }

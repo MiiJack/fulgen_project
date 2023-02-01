@@ -1,699 +1,486 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="fr-FR">
 <head>
+    <title>HEI - Haute École d'Informatique</title>
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HEI - Haute École d`Informatique</title>
-    <link rel="icon" href="./assets/logo.png">
-    <link rel="apple-touch-icon" href="./assets/logo.png">
+    <!-- icon -->
+    <link rel="apple-touch-icon" href="assets/logo.png">
+    <link rel="icon" href="assets/logo.png">
+    <link rel="shortcut icon" href="assets/logo.png">
+    <!-- links -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="./css/animation.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/style_ab.css">
-    <link rel="stylesheet" href="./css/kirisaki-vk_custom-rules.css">
-    <link rel="stylesheet" href="./css/maria_styles.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond%3A400%2C600&amp;display=swap&amp;ver=3.4.10" media="all">
+    <link rel="stylesheet" href="css/groupe.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style-ab.css">
+    <link rel="stylesheet" href="css/style-mar.css">
+    <link rel="stylesheet" href="css/style-vk.css">
+    <link rel="stylesheet" href="css/style-mir.css">
+    <!-- scripts -->
+    <script src="js/all.min.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/jquery-3.6.3.min.js" defer></script>
+    <script src="js/script-gp.js" defer></script>
 </head>
 
 
 <body>
+    <!-- header  -->
+    <header class="w-100 d-flex align-items-center justify-content-center pt-4 fixed-top setFade" data-delay=".5s">
 
-    <!-- bg img HEI  À mettre tout en haut -->
-    <div class="bg-img-fond-ab"></div>
-    <header class="d-flex align-items-center justify-content-center w-100 marginize-top-ab fade-animation-showing-ab"
-        data-fade-show=".5s">
+        <div class="w-75 navbar navbar-expand-sm justify-content-between">
+            <button class="btn btn-header-ab menu-toggler"><i class="fa-solid fa-xl fa-bars"></i></button>
 
-        <div class="d-flex align-items-center justify-content-between w-75 navbar navbar-expand-sm p-0">
-            <button class="toggle-nav-side-ab btn-nav-ico-ab btn">
-                <i class="fa-solid fa-xl fa-bars"></i>
-            </button>
-
-            <a href="#home-ab"><img class="logo-hei-ab" src="./assets/logo.png" alt=""></a>
+            <a href="#home"><img class="header-hei-logo-ab" src="assets/logo.png" alt="Logo HEI - Haute École d'Informatique"></a>
 
             <nav class="navbar-nav collapse navbar-collapse flex-grow-0">
                 <ul class="nav gap-4">
-                    <li>
-                        <a href="#" class="btn-nav-ico-ab">
-                            <i class="fa-solid fa-xl fa-calendar-days"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn-nav-ico-ab">
-                            <i class="fa-solid fa-xl fa-book"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn-nav-ico-ab">
-                            <i class="fa-solid fa-xl fa-user"></i>
-                        </a>
-                    </li>
+                    <li><a href="https://calendar.hei.school" class="btn-header-ab"><i class="fa-solid fa-xl fa-calendar-days"></i></a></li>
+                    <li><a href="https://programs.hei.school" class="btn-header-ab"><i class="fa-solid fa-xl fa-book"></i></a></li>
+                    <li><a href="https://admin.hei.school" class="btn-header-ab"><i class="fa-solid fa-xl fa-user"></i></a></li>
                 </ul>
             </nav>
+
         </div>
 
     </header>
 
-    <!-- NavBar  À mettre après le header-->
-    <div class="area-ab"></div>
-    <nav class="h-100 bg-white width-side-ab d-flex flex-column justify-content-between">
-        <div class="d-flex flex-column">
-            <button class="align-self-end m-3 close-x-ab toggle-nav-side-ab btn p-1">
-                <i class="fa-solid fa-xmark-circle"></i>
+    <!-- navbar  -->
+    <nav class="backdrop-blur">
+        <div class="navbar-side-gp bg-white h-100 d-flex flex-column">
+            <button class="align-self-end m-3 btn p-1 btn-header-ab menu-toggler">
+                <i class="fa-solid fs-1 fa-xmark-circle"></i>
             </button>
             <ul class="nav flex-column overflow-auto h-100">
-                <li class="border-b-ab fs-5 text-nav-link-ab"><a href="#home-ab"
-                        class="p-3 nav-link fw-bold z-1-ab w-100 text-dark">Home</a></li>
+                <li class="border-b-ab fs-5 text-nav-link-ab">
+                    <a href="#home" class="p-3 nav-link fw-bold w-100 text-dark">Home</a>
+                </li>
 
-                <li class="border-b-ab fs-5 text-nav-link-ab"><a href="#évènements"
-                        class="p-3 nav-link fw-bold z-1-ab w-100 text-dark">Évènements</a></li>
+                <li class="border-b-ab fs-5 text-nav-link-ab">
+                    <a href="#event" class="p-3 nav-link fw-bold w-100 text-dark">Évènements</a>
+                </li>
 
-                <li class="border-b-ab fs-5 text-nav-link-ab"><a href="#formations"
-                        class="p-3 nav-link fw-bold z-1-ab w-100 text-dark">Formations</a></li>
+                <li class="border-b-ab fs-5 text-nav-link-ab">
+                    <a href="#formations" class="p-3 nav-link fw-bold w-100 text-dark">Formations</a>
+                </li>
 
-                <li class="border-b-ab fs-5 text-nav-link-ab"><a href="#parcours"
-                        class="p-3 nav-link fw-bold z-1-ab w-100 text-dark">Parcours</a></li>
+                <li class="border-b-ab fs-5 text-nav-link-ab">
+                    <a href="#parcours" class="p-3 nav-link fw-bold w-100 text-dark">Parcours</a>
+                </li>
 
-                <li class="border-b-ab fs-5 text-nav-link-ab"><a href="#team-ab"
-                        class="p-3 nav-link fw-bold z-1-ab w-100 text-dark">Notre équipe</a></li>
+                <li class="border-b-ab fs-5 text-nav-link-ab">
+                    <a href="#team" class="p-3 nav-link fw-bold w-100 text-dark">Notre équipe</a>
+                </li>
 
-                <li class="border-b-ab fs-5 text-nav-link-ab"><a href="#statistics"
-                        class="p-3 nav-link fw-bold z-1-ab w-100 text-dark">Statistics</a></li>
+                <li class="border-b-ab fs-5 text-nav-link-ab">
+                    <a href="#stats"class="p-3 nav-link fw-bold w-100 text-dark">Statistics</a>
+                </li>
 
-                <li class="border-b-ab fs-5 text-nav-link-ab"><a href="#contact"
-                        class="p-3 nav-link fw-bold z-1-ab w-100 text-dark">Contact</a></li>
-
-            </ul>
-        </div>
-
-        <div class="d-flex flex-column nav-appear-ab">
-            <ul class="nav flex-column text-center list-link-ab">
-                <li class="border-b-ab fs-5 text-nav-link-ab"><a href="#"
-                        class="p-2 nav-link fw-bold z-1-ab w-100 text-dark">Admin</a></li>
-                <li class="border-b-ab fs-5 text-nav-link-ab"><a href="#"
-                        class="p-2 nav-link fw-bold z-1-ab w-100 text-dark">Emploi du temps</a></li>
-                <li class="fs-5 text-nav-link-ab"><a href="#"
-                        class="p-2 nav-link fw-bold z-1-ab w-100 text-dark">Programme pédagogique</a></li>
-            </ul>
-            <ul class="nav w-100 justify-content-around pb-3 sm-nav-icons-ab">
-                <li><a href="#"><i class="fa-solid fa-xl fa-user btn-link-ico-ab"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-xl fa-calendar-days btn-link-ico-ab"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-xl fa-book btn-link-ico-ab"></i></a></li>
+                <li class="border-b-ab fs-5 text-nav-link-ab">
+                    <a href="#contact" class="p-3 nav-link fw-bold w-100 text-dark">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
 
     <main>
         <!-- home -->
-        <section class="d-flex align-items-center justify-content-center banner-text-ab" id="home-ab">
-            <div
-                class="container text-center text-white gap-4 d-flex flex-column align-items-center justify-content-end">
-                <h1 class="fs-1 hei-title-ab fade-animation-showing-ab" data-fade-show=".7s">Haute École d’Informatique
-                </h1>
-                <p class="fs-5 scroll-aniation-gp" data-fade-show=".5s" data-type-anim="fade-scroll-gp">Professionnels du monde entier unis pour
-                    former les étudiants malgaches suivant les plus hauts standards.</p>
-                <a href="#" class="btn btn-outline-warning fs-2 fade-animation-showing-ab"
-                    data-fade-show="1.1s">S'inscrire</a>
+        <section id="home" class="vh-100 d-flex align-items-end fond-hei-ab">
+            <div class="container text-center pb-4 z-top-section d-flex flex-column align-items-center gap-3">
+                <h1 class="display-1 fw-bold text-white-gp setFade" data-delay=".7s">Haute École d'Informatique</h1>
+                <p class="fs-5 text-white-gp setFade" data-delay=".9s">Professionnels du monde entier unis pour former les étudiants malgaches suivant les plus hauts standards.</p>
+                <a href="#contact" class="btn btn-outline-warning fs-2 setFade" data-delay="1.1s">S'inscrire</a>
             </div>
         </section>
 
-        <!-- Maria  -->
-        <!-- Nos évènements -->
-        <!-- This x-overflow-fix fixes the x axis overflow caused by this section -->
-        <div class="x-overflow-fix">
-            <section
-                class="row bg-white text-center d-flex flex-column justify-content-center align-items-center align-middle"
-                id="évènements">
-                <div class="scale-one">
-                    <h1 class="display-3 text-center text-muted my-4">Nos évènements</h1>
-                    <h4 class="display-6 text-center text-muted my-4">Chaque année, nous organisons ces évènements
-                        suivants
-                        pour
-                        bien
-                        motiver nos élèves et pour développer notre formation</h4>
-                </div>
-                <div class="row row-cols-1 row-cols-md-3 g-4 my-3 w-75">
-                    <!-- Journée d'integration card card -->
-                    <div class="col">
-                        <div class="card no-border-card scale-on-hover smoothing-scale h-100">
-                            <div class="card-img-top">
-                                <img src="./assets/journée_d_integration.png" class="card-img" alt="...">
-                                <div class="d-flex flex-column align-items-center justify-content-center more">
-                                    <a href="#" class="d-flex justify-content-center align-items-center"><i
-                                            class="fa-solid fa-square-info"></i>
-                                        <p>En savoir plus</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title color-hei">Journée d'integration</h5>
-                                <p class="card-text">La journée d’intégration
-                                    est l’occasion de <b> renforcer la cohésion
-                                        entre étudiants</b>, à l’aide de jeux ludiques. Une séance de développement
-                                    personnel
-                                    avec l’équipe HEI
-                                <p class="text-muted">22 décembre
-                                    2022</p>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Talks HEI card -->
-                    <div class="col">
-                        <div class="card no-border-card scale-on-hover smoothing-scale h-100">
-                            <div class="card-img-top">
-                                <img src="./assets/Novity.png" class="card-img" alt="...">
-                                <div class="d-flex flex-column align-items-center justify-content-center more">
-                                    <a href="#" class="d-flex justify-content-center align-items-center"><i
-                                            class="fa-solid fa-square-info"></i>
-                                        <p>En savoir plus</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title color-hei">Talks HEI : Inspirer les
-                                    jeunes</h5>
-                                <p class="card-text">Nous sommes reconnaissants
-                                    d’avoir accueilli <b>Xavier Lernould, CEO de
-                                        Novity </b>dans nos locaux.
-                                    Il a partagé avec nos élèves <b>les attentes et
-                                        besoins
-                                        des ESN comme Novity</b>.
-                                    <br>
-                                <p class="text-muted">10 novembre
-                                    2022.</p>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Hackaton card -->
-                    <div class="col">
-                        <div class="card no-border-card scale-on-hover smoothing-scale h-100">
-                            <div class="card-img-top">
-                                <img src="./assets/Hackathon.png" class="card-img" alt="...">
-                                <div class="d-flex flex-column align-items-center justify-content-center more">
-                                    <a href="#" class="d-flex justify-content-center align-items-center"><i
-                                            class="fa-solid fa-square-info"></i>
-                                        <p>En savoir plus</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title color-hei">Hackathon intra-HEI</h5>
-                                <p class="card-text">Bravo aux membres de la <b class="color-primary">#TribuHEI</b>
-                                    de la L1 qui ont
-                                    participé au hackathon
-                                    intra-HEI. Nous sommes fiers et contents des efforts fournis par chaque participant
-                                    et
-                                    participante !</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Journée motivationelle card -->
-                    <div class="col">
-                        <div class="card no-border-card scale-on-hover smoothing-scale h-100">
-                            <div class="card-img-top">
-                                <img src="./assets/journée_motivation.jpg" class="card-img" alt="...">
-                                <div class="d-flex flex-column align-items-center justify-content-center more">
-                                    <a href="#" class="d-flex justify-content-center align-items-center"><i
-                                            class="fa-solid fa-square-info"></i>
-                                        <p>En savoir plus</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title color-hei">Journée
-                                    motivationnelle</h5>
-                                <p class="card-text">HEI inspire ses étudiants en leur <b>racontant
-                                        le parcours de quelques
-                                        informaticiens, et informaticiennes,</b> malgaches qui brillent sur place et
-                                    partout
-                                    dans le
-                                    monde.
-                                <p class="text-muted"> 6 avril
-                                    2022.</p>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Journée des entrprises card -->
-                    <div class="col">
-                        <div class="card no-border-card scale-on-hover smoothing-scale h-100">
-                            <div class="card-img-top">
-                                <img src="./assets/journée_des_entreprises.jpeg" class="card-img" alt="...">
-                                <div class="d-flex flex-column align-items-center justify-content-center more">
-                                    <a href="#" class="d-flex justify-content-center align-items-center"><i
-                                            class="fa-solid fa-square-info"></i>
-                                        <p>En savoir plus</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title color-hei">Journée des entreprises</h5>
-                                <p class="card-text">HEI invite chez elle quelques
-                                    entreprises pour
-                                    confirmer l’adéquation de
-                                    sa formation avec les besoins du marché</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- BattleDev card -->
-                    <div class="col">
-                        <div class="card no-border-card scale-on-hover smoothing-scale h-100">
-                            <div class="card-img-top">
-                                <img src="./assets/battledev.jpg" class="card-img" alt="...">
-                                <div class="d-flex flex-column align-items-center justify-content-center more">
-                                    <a href="#" class="d-flex justify-content-center align-items-center"><i
-                                            class="fa-solid fa-square-info"></i>
-                                        <p>En savoir plus</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title color-hei">Battle dev</h5>
-                                <p class="card-text">HEI organise <b>un
-                                        concours de
-                                        programmation entre ses étudiants.</b>
-                                    Spécificité de cette édition : un prix de la meilleure progression, relativement aux
-                                    résultats scolaires, est attribué en plus du premier prix traditionnel.<br>
-                                <p class="text-muted">2 avril
-                                    2022</p>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <!-- /Nos évènements -->
-
-        <!-- /Nos Formations -->
-        <section class="d-flex flex-column justify-content-center align-items-center" id="formations">
-
-            <h1 class="display-3 text-center text-white my-4">Nos Formations</h1>
-            <h4 class="display-6 text-center text-muted my-4">Les étudiants et les étudiantes doivent suivre
-                les
-                formations que nous organisons à l'aide de ces programmes</h4>
-            <div class="maria-width w-75">
-
-                <div class="card bg-dark text-white my-4">
-                    <img src="./assets/parcours.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay backgound-dark">
-                        <h3 class="card-title">Parcours</h3>
-                        <p class="card-text ps-3">Nous proposons deux parcours jusqu’à la Licence : <b>écosystèmes
-                                Logiciels</b> et
-                            <b>Transformations Numériques</b>
-                        </p>
-                        <a href="#" class="btn btn-outline-warning fade-animation-showing-ab">Voir Plus</a>
-                    </div>
-                </div>
-
-                <div class="card bg-dark text-white my-4">
-                    <img src="./assets/Alliance_formations.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay backgound-dark">
-                        <h3 class="card-title">Alliance Française</h3>
-                        <p class="card-text ps-3"> HEI <b>valorise la
-                                communication autant que la technique.</b> Les cours de français sont assurés par
-                            l’Alliance Française
-                            de Madagascar.</p>
-                        <a href="#" class="btn btn-outline-warning fade-animation-showing-ab">Voir Plus</a>
-                    </div>
-                </div>
-
-                <div class="card bg-dark text-white my-4">
-                    <img src="./assets/bourse.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay backgound-dark">
-                        <h3 class="card-title">Bourses d'études</h3>
-                        <p class="card-text ps-3">Chaque année, les <b>3
-                                étudiants les mieux classés au concours d’entrée</b> sont exonérés des frais de
-                            scolarité.</p>
-                        <a href="#" class="btn btn-outline-warning fade-animation-showing-ab">Voir Plus</a>
-                    </div>
-                </div>
-
+        <!-- evenement  -->
+        <section id="event">
+            <div class="text-center px-3 py-4">
+                <h1 class="display-3 fw-bold scroll-anim" data-type-anim="scaleFade" data-delay=".2s">Nos évènements</h1>
+                <p class="fs-4 scroll-anim" data-type-anim="fadeIn" data-delay=".35s">Chaque année, nous organisons ces évènements suivants pour bien motiver nos étudiants et pour développer notre formation</p>
             </div>
-        </section>
-
-        <!-- This is my first part "Features" | Kirisaki_VK -->
-        <section class="text-center d-flex flex-column justify-content-center align-items-center align-middle"
-            id="parcours">
-            <h1 class="text-white">Nos parcours chez HEI</h1>
-            <p class="text-muted">Chez HEI pendants vos études , on suit les parcours suivantes</p>
-            <div class="row row-cols-1 row-cols-md-4 g-4 my-3">
-                <!-- Web card -->
-                <div class="col">
-                    <div class="card no-border-card scale-on-hover smoothing-scale h-100">
-                        <div class="card-img-top">
-                            <img src="./assets/web.jpg" class="card-img" alt="...">
-                            <div class="d-flex flex-column align-items-center justify-content-center more">
-                                <a href="#"
-                                    class="d-flex flex-column justify-content-center align-items-center kirisaki_vk-link-styles"><i
-                                        class="fa-solid dimens-counter-icons fa-circle-info"></i>
-                                    <p>En savoir plus</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title color-hei">WEB</h5>
-                            <p class="card-text">C'est dans Web que nous apprenons tout concernant le developpement web.
+            <div class="container">
+                <div class="row justify-content-around w-100 gap-3">
+                    
+                    <div class="d-flex col-lg-3 col-md-4 gap-3 mx-3 scroll-anim" data-type-anim="fadeIn" data-delay=".3s">
+                        <img class="circle-img-mar" src="assets/journée_d_integration.png" alt="journée d'integration">
+                        <div>
+                            <h4 class="fw-bold fs-5">Journée d'integration</h4>
+                            <p class="fs-6">
+                                Une occasion de <b> renforcer la cohésion entre étudiants</b>, à l’aide de jeux ludiques.
                             </p>
                         </div>
                     </div>
-                </div>
-                <!-- Prog card -->
-                <div class="col">
-                    <div class="card no-border-card scale-on-hover smoothing-scale h-100">
-                        <div class="card-img-top">
-                            <img src="./assets/prog.jpeg" class="card-img" alt="...">
-                            <div class="d-flex flex-column align-items-center justify-content-center more">
-                                <a href="#"
-                                    class="d-flex flex-column justify-content-center align-items-center kirisaki_vk-link-styles"><i
-                                        class="fa-solid dimens-counter-icons fa-circle-info"></i>
-                                    <p>En savoir plus</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title color-hei">PROG</h5>
-                            <p class="card-text">C'est dans PROG que nous allons apprendre la programation et les
-                                algorithmes en général.</p>
+
+                    <div class="d-flex col-lg-3 col-md-4 gap-3 mx-3 scroll-anim" data-type-anim="fadeIn" data-delay=".5s">
+                        <img class="circle-img-mar" src="assets/Novity.png" alt="Talks HEI : Inspirer les jeunes">
+                        <div>
+                            <h4 class="fw-bold fs-5">Talks HEI : Inspirer les jeunes</h4>
+                            <p class="fs-6">Avec <b>Xavier Lernould, CEO de Novity </b> dans nos locaux.</p>
                         </div>
                     </div>
-                </div>
-                <!-- MGT card -->
-                <div class="col">
-                    <div class="card no-border-card scale-on-hover smoothing-scale h-100">
-                        <div class="card-img-top">
-                            <img src="./assets/Outils-collaboratifs.webp" class="card-img" alt="...">
-                            <div class="d-flex flex-column align-items-center justify-content-center more">
-                                <a href="#"
-                                    class="d-flex flex-column justify-content-center align-items-center kirisaki_vk-link-styles"><i
-                                        class="fa-solid dimens-counter-icons fa-circle-info"></i>
-                                    <p>En savoir plus</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title color-hei">MGT</h5>
-                            <p class="card-text">C'est dans cette matiere que nous aprenons comment gérér les projets et
-                                l'utilisation des outils de collaboration.</p>
+                    
+                    <div class="d-flex col-lg-3 col-md-4 gap-3 mx-3 scroll-anim" data-type-anim="fadeIn" data-delay=".7s">
+                        <img class="circle-img-mar" src="assets/Hackathon.png" alt="Hackathon intra-HEI">
+                        <div>
+                            <h4 class="fw-bold fs-5">Hackathon intra-HEI</h4>
+                            <p class="fs-6">Bravo aux membres de la <b class="text-primary"> #TribuHEI</b> de la L1 qui ont participé</p>
+                            </p>
                         </div>
                     </div>
-                </div>
-                <!-- Sys card -->
-                <div class="col">
-                    <div class="card no-border-card scale-on-hover smoothing-scale h-100">
-                        <div class="card-img-top">
-                            <img src="./assets/sys.jpeg" class="card-img" alt="...">
-                            <div class="d-flex flex-column align-items-center justify-content-center more">
-                                <a href="#"
-                                    class="d-flex flex-column justify-content-center align-items-center kirisaki_vk-link-styles"><i
-                                        class="fa-solid dimens-counter-icons fa-circle-info"></i>
-                                    <p>En savoir plus</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title color-hei">SYS</h5>
-                            <p class="card-text">C'est dans cette matière qu'on apprend sur les Systèmes d'exploitation
-                                et des résaux.</p>
+                    
+                    <div class="d-flex col-lg-3 col-md-4 gap-3 mx-3 scroll-anim" data-type-anim="fadeIn" data-delay=".9s">
+                        <img class="circle-img-mar" src="assets/journée_motivation.jpg" alt="Journée motivationnelle">
+                        <div>
+                            <h4 class="fw-bold fs-5">Journée motivationnelle</h4>
+                            <p class="fs-6">
+                                Inspire les étudiants en leur <b>racontant le parcours de quelques informaticiens(ennes)</b> malgaches qui brillent sur place et partout dans le monde.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <!-- Theorie card -->
-                <div class="col">
-                    <div class="card no-border-card scale-on-hover smoothing-scale h-100">
-                        <div class="card-img-top">
-                            <img src="./assets/thorie.png" class="card-img" alt="...">
-                            <div class="d-flex flex-column align-items-center justify-content-center more">
-                                <a href="#"
-                                    class="d-flex flex-column justify-content-center align-items-center kirisaki_vk-link-styles"><i
-                                        class="fa-solid dimens-counter-icons fa-circle-info"></i>
-                                    <p>En savoir plus</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title color-hei">THEORIE</h5>
-                            <p class="card-text">C'est dans THEORIE que nous allons introduire les Mathématiques dans la
-                                programation.</p>
+
+                    <div class="d-flex col-lg-3 col-md-4 gap-3 mx-3 scroll-anim" data-type-anim="fadeIn" data-delay="1.1s">
+                        <img class="circle-img-mar" src="assets/journée_des_entreprises.jpeg" alt="journée des entreprises">
+                        <div>
+                            <h4 class="fw-bold fs-5">Journée des entreprises</h4>
+                            <p class="fs-6">
+                                Les entreprises sont invités pour confirmer l’adéquation de sa formation avec les besoins du marché
+                            </p>
                         </div>
                     </div>
-                </div>
-                <!-- LV card -->
-                <div class="col">
-                    <div class="card no-border-card scale-on-hover smoothing-scale h-100">
-                        <div class="card-img-top">
-                            <img src="./assets/lv.jpeg" class="card-img" alt="...">
-                            <div class="d-flex flex-column align-items-center justify-content-center more">
-                                <a href="#"
-                                    class="d-flex flex-column justify-content-center align-items-center kirisaki_vk-link-styles"><i
-                                        class="fa-solid dimens-counter-icons fa-circle-info"></i>
-                                    <p>En savoir plus</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title color-hei">LV</h5>
-                            <p class="card-text">Dans LV nous apprenons une langue vivante, dans le cas des premières
-                                années; c'est l'apprentissage du français </p>
+
+                    <div class="d-flex col-lg-3 col-md-4 gap-3 mx-3 scroll-anim"  data-type-anim="fadeIn" data-delay="1.3s">
+                        <img class="circle-img-mar" src="assets/battledev.jpg" alt="Battle dev">
+                        <div>
+                            <h4 class="fw-bold fs-5">Battle dev</h4>
+                            <p class="fs-6">
+                                <b>Un concours de programmation entre les étudiants.</b> Et des prix pour chaque catégories.
+                            </p>
                         </div>
                     </div>
+                    
                 </div>
-                <!-- Donées Card -->
-                <div class="col">
-                    <div class="card no-border-card scale-on-hover smoothing-scale h-100">
-                        <div class="card-img-top">
-                            <img src="./assets/database.jpeg" class="card-img" alt="...">
-                            <div class="d-flex flex-column align-items-center justify-content-center more">
-                                <a href="#"
-                                    class="d-flex flex-column justify-content-center align-items-center kirisaki_vk-link-styles"><i
-                                        class="fa-solid dimens-counter-icons fa-circle-info"></i>
-                                    <p>En savoir plus</p>
-                                </a>
-                            </div>
+            </div>
+        </section>
+
+        <!-- formations  -->
+        <section id="formations">
+            <div class="text-center px-3 py-3">
+                <h1 class="display-3 fw-bold scroll-anim"  data-type-anim="scaleFade" data-delay=".2s">Nos formations</h1>
+                <p class="fs-4 scroll-anim"  data-type-anim="fadeIn" data-delay=".4s">Les étudiants suivent les formations que nous organisons à l'aide de ces programmes</p>
+            </div>
+
+            <div class="container py-5">
+                <div class="row justify-content-evenly">
+
+                    <div class="col-lg-3 d-flex flex-column align-items-center justify-content-center gap-3 bg-light scroll-anim"  data-type-anim="fadeIn" data-delay=".6s">
+                        <img class="card-img my-3" src="assets/parcours.jpg" alt="Console.log('Parcours')">
+                        <div class="text-center py-3 h-100 d-flex flex-column justify-content-between align-items-center">
+                            <h2>Les parcours</h2>
+                            <p>Nous proposons deux type de parcours durant la Licence : <b>écosystèmes Logiciels (EL)</b> et <b>Transformations Numériques(TN)</b></p>
+                            <a href="#!" class="btn btn-outline-warning fs-5">En savoir plus</a>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title color-hei">DONNEES</h5>
-                            <p class="card-text">On apprend dans Données les méthode de gestion de larges bases de données</p>
+                    </div>
+
+                    <div class="col-lg-3 d-flex flex-column align-items-center justify-content-center gap-3 bg-light scroll-anim"  data-type-anim="fadeIn" data-delay=".8s">
+                        <img class="card-img my-3" src="assets/Alliance_formations.jpg" alt="Alliance française">
+                        <div class="text-center py-3 h-100 d-flex flex-column justify-content-between align-items-center">
+                            <h2>L'Alliance française</h2>
+                            <p>HEI valorise la communication autant que la technique. Les cours de français sont assurés par l’Alliance Française de Madagascar.</p>
+                            <a href="#!" class="btn btn-outline-warning fs-5">En savoir plus</a>
                         </div>
+                    </div>
+
+                    <div class="col-lg-3 d-flex flex-column align-items-center justify-content-center gap-3 bg-light scroll-anim"  data-type-anim="fadeIn" data-delay="1s">
+                        <img class="card-img my-3" src="assets/parcours.jpg" alt="Console.log('Parcours')">
+                        <div class="text-center py-3 h-100 d-flex flex-column justify-content-between align-items-center">
+                            <h2>La bourse d'étude</h2>
+                            <p>Chaque année, 3 étudiants les mieux classés au concours d’entrée sont exonérés des frais de scolarité.</p>
+                            <a href="#!" class="btn btn-outline-warning fs-5">En savoir plus</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- parcours  -->
+        <section id="parcours">
+            <div class="text-center px-3">
+                <h1 class="display-3 fw-bold scroll-anim"  data-type-anim="scaleFade" data-delay=".2s">Les parcours chez HEI</h1>
+                <p class="fs-4 scroll-anim"  data-type-anim="fadeIn" data-delay=".4s">Les matières que nos étudiants suivent durant leurs parcours</p>
+            </div>
+
+            <div class="container">
+                <div class="row justify-content-evenly gap-3 py-3">
+
+                    <div class="position-relative col-lg-3 col-md-4 m-2 py-2 h-100 scale-hover-vk scroll-anim"  data-type-anim="fadeIn" data-delay=".2s">
+                        <div class="d-flex align-items-center justify-content-center position-relative">
+                            <img src="assets/web.jpg" alt="WEB" class="img-card-vk">
+                            <a href="#!" class="text-center d-flex flex-column align-items-center justify-content-center gap-2 more kirisaki_vk-link-styles">
+                                <i class="fa-solid fa-xl fa-circle-info"></i>
+                                <span class="fs-4">En savoir plus</span>
+                            </a>
+                        </div>
+                        <div class="text-center py-3">
+                            <h3 class="fs-2 fw-bold text-warning">WEB</h3>
+                            <p class="fs-5">Tout ce qui concerne le developpement web.</p>
+                        </div>
+                    </div>
+
+                    <div class="position-relative col-lg-3 col-md-4 m-2 py-2 h-100 scale-hover-vk scroll-anim"  data-type-anim="fadeIn" data-delay=".3s">
+                        <div class="d-flex align-items-center justify-content-center position-relative">
+                            <img src="assets/prog.jpeg" alt="PROG" class="img-card-vk">
+                            <a href="#!" class="text-center d-flex flex-column align-items-center justify-content-center gap-2 more kirisaki_vk-link-styles">
+                                <i class="fa-solid fa-xl fa-circle-info"></i>
+                                <span class="fs-4">En savoir plus</span>
+                            </a>
+                        </div>
+                        <div class="text-center py-3">
+                            <h3 class="fs-2 fw-bold text-warning">PROG</h3>
+                            <p class="fs-5">La programation et les algorithmes en général.</p>
+                        </div>
+                    </div>
+
+                    <div class="position-relative col-lg-3 col-md-4 m-2 py-2 h-100 scale-hover-vk scroll-anim"  data-type-anim="fadeIn" data-delay=".4s">
+                        <div class="d-flex align-items-center justify-content-center position-relative">
+                            <img src="assets/Outils-collaboratifs.webp" alt="MGT" class="img-card-vk">
+                            <a href="#!" class="text-center d-flex flex-column align-items-center justify-content-center gap-2 more kirisaki_vk-link-styles">
+                                <i class="fa-solid fa-xl fa-circle-info"></i>
+                                <span class="fs-4">En savoir plus</span>
+                            </a>
+                        </div>
+                        <div class="text-center py-3">
+                            <h3 class="fs-2 fw-bold text-warning">MGT</h3>
+                            <p class="fs-5">Gestion de projet et d'utilisation des outils de collaboration</p>
+                        </div>
+                    </div>
+
+                    <div class="position-relative col-lg-3 col-md-4 m-2 py-2 h-100 scale-hover-vk scroll-anim"  data-type-anim="fadeIn" data-delay=".5s">
+                        <div class="d-flex align-items-center justify-content-center position-relative">
+                            <img src="assets/sys.jpeg" alt="SYS" class="img-card-vk">
+                            <a href="#!" class="text-center d-flex flex-column align-items-center justify-content-center gap-2 more kirisaki_vk-link-styles">
+                                <i class="fa-solid fa-xl fa-circle-info"></i>
+                                <span class="fs-4">En savoir plus</span>
+                            </a>
+                        </div>
+                        <div class="text-center py-3">
+                            <h3 class="fs-2 fw-bold text-warning">SYS</h3>
+                            <p class="fs-5">L'analyse sur les Systèmes d'exploitations et les résaux, etc</p>
+                        </div>
+                    </div>
+
+                    <div class="position-relative col-lg-3 col-md-4 m-2 py-2 h-100 scale-hover-vk scroll-anim"  data-type-anim="fadeIn" data-delay=".6s">
+                        <div class="d-flex align-items-center justify-content-center position-relative">
+                            <img src="assets/thorie.png" alt="THEORIE" class="img-card-vk">
+                            <a href="#!" class="text-center d-flex flex-column align-items-center justify-content-center gap-2 more kirisaki_vk-link-styles">
+                                <i class="fa-solid fa-xl fa-circle-info"></i>
+                                <span class="fs-4">En savoir plus</span>
+                            </a>
+                        </div>
+                        <div class="text-center py-3">
+                            <h3 class="fs-2 fw-bold text-warning">SYS</h3>
+                            <p class="fs-5">Introduction des Mathématiques dans la programation.</p>
+                        </div>
+                    </div>
+
+                    <div class="position-relative col-lg-3 col-md-4 m-2 py-2 h-100 scale-hover-vk scroll-anim"  data-type-anim="fadeIn" data-delay=".7s">
+                        <div class="d-flex align-items-center justify-content-center position-relative">
+                            <img src="assets/lv.jpeg" alt="Langue vivante" class="img-card-vk">
+                            <a href="#!" class="text-center d-flex flex-column align-items-center justify-content-center gap-2 more kirisaki_vk-link-styles">
+                                <i class="fa-solid fa-xl fa-circle-info"></i>
+                                <span class="fs-4">En savoir plus</span>
+                            </a>
+                        </div>
+                        <div class="text-center py-3">
+                            <h3 class="fs-2 fw-bold text-warning">LV</h3>
+                            <p class="fs-5">La langue vivante : Français et Anglais</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- team  -->
+        <section class="text-center d-flex align-items-center justify-content-center flex-column py-5" id="team">
+            <h1 class="display-4 fw-bold scroll-anim"  data-type-anim="scaleFade" data-delay=".2s">Un aperçu de l’équipe pédagogique</h1>
+            <p class="w-75 fs-4 scroll-anim"  data-type-anim="fadeIn" data-delay=".3s">Soyez formé par nos meilleurs enseignants.</p>
+
+            <div class="container mt-4">
+                <div class="row justify-content-around w-100 m-0">
+
+                    <div class="py-4 px-3 col-lg-3 col-sm-5 d-flex flex-column align-items-center justify-content-between hover-shadow-ab scroll-anim"  data-type-anim="fadeIn" data-delay=".4s">
+                        <div>
+                            <img class="rounded-circle team-img-area-ab" src="./assets/Tahina-OK.png" alt="">
+                            <h3 class="fs-3">Tahina Ralitera</h3>
+                            <p class="fs-6">Docteure-Ingénieure, CEA, Saclay | Prix L'Oréal-UNESCO pour les Femmes en Science (2017)</p>
+                        </div>
+                        <nav class="w-100">
+                            <ul class="nav justify-content-center gap-3 w-100">
+                                <li> <a href="#" class="btn-link-ico-ab">
+                                        <i class="fa-brands fa-xl fa-facebook"></i>
+                                    </a> </li>
+                                <li> <a href="#" class="btn-link-ico-ab">
+                                        <i class="fa-brands fa-xl fa-instagram"></i>
+                                    </a> </li>
+                                <li> <a href="#" class="btn-link-ico-ab">
+                                        <i class="fa-brands fa-xl fa-linkedin"></i>
+                                    </a> </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="py-4 px-3 col-lg-3 col-sm-5 d-flex flex-column align-items-center justify-content-between hover-shadow-ab scroll-anim"  data-type-anim="fadeIn" data-delay=".5s">
+                        <div>
+                            <img class="rounded-circle team-img-area-ab" src="./assets/Yannick.png" alt="">
+                            <h3 class="fs-3">Yannick Raharijaona</h3>
+                            <p class="fs-6">ML Tech Lead, Rocket Science, Ottawa</p>
+                        </div>
+                        <nav class="w-100">
+                            <ul class="nav justify-content-center gap-3 w-100">
+                                <li> <a href="#" class="btn-link-ico-ab">
+                                        <i class="fa-brands fa-xl fa-facebook"></i>
+                                    </a> </li>
+                                <li> <a href="#" class="btn-link-ico-ab">
+                                        <i class="fa-brands fa-xl fa-instagram"></i>
+                                    </a> </li>
+                                <li> <a href="#" class="btn-link-ico-ab">
+                                        <i class="fa-brands fa-xl fa-linkedin"></i>
+                                    </a> </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="py-4 px-3 col-lg-3 col-sm-5 d-flex flex-column align-items-center justify-content-between hover-shadow-ab scroll-anim"  data-type-anim="fadeIn" data-delay=".6s">
+                        <div>
+                            <img class="rounded-circle team-img-area-ab" src="./assets/Parison.png" alt="">
+                            <h3 class="fs-3">Parison Ravalomanda</h3>
+                            <p class="fs-6">Ingénieur logiciel, Google, Londres</p>
+                        </div>
+                        <nav class="w-100">
+                            <ul class="nav justify-content-center gap-3 w-100">
+                                <li> <a href="#" class="btn-link-ico-ab">
+                                        <i class="fa-brands fa-xl fa-facebook"></i>
+                                    </a> </li>
+                                <li> <a href="#" class="btn-link-ico-ab">
+                                        <i class="fa-brands fa-xl fa-instagram"></i>
+                                    </a> </li>
+                                <li> <a href="#" class="btn-link-ico-ab">
+                                        <i class="fa-brands fa-xl fa-linkedin"></i>
+                                    </a> </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="py-4 px-3 col-lg-3 col-sm-5 d-flex flex-column align-items-center justify-content-between hover-shadow-ab scroll-anim"  data-type-anim="fadeIn" data-delay=".7s">
+                        <div>
+                            <img class="rounded-circle team-img-area-ab" src="./assets/Sandrine-OK.png" alt="">
+                            <h3 class="fs-3">Sandrine Ramaroson</h3>
+                            <p class="fs-6">Ex-directrice technique, Vanilla Pay, Antananarivo | Révélation Fintech
+                                de
+                                Women In Africa (2020)</p>
+                        </div>
+                        <nav class="w-100">
+                            <ul class="nav justify-content-center gap-3 w-100">
+                                <li> <a href="#" class="btn-link-ico-ab">
+                                        <i class="fa-brands fa-xl fa-facebook"></i>
+                                    </a> </li>
+                                <li> <a href="#" class="btn-link-ico-ab">
+                                        <i class="fa-brands fa-xl fa-instagram"></i>
+                                    </a> </li>
+                                <li> <a href="#" class="btn-link-ico-ab">
+                                        <i class="fa-brands fa-xl fa-linkedin"></i>
+                                    </a> </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- This fixes all the empty space in the bottom -->
-        <div class="bg-white pt-3">
-            <!-- This is the second section "Testimonials" | Kirisaki_VK -->
-            <section
-                class="text-center d-flex flex-column justify-content-center align-items-center align-middle my-5 p-3 bg-white"
-                id="statistics">
-                <h1>Statistiques</h1>
-                <p class="text-muted">Depuis la création de HEI voici els statistiques du devellopement de notre école
-                </p>
-                <div class="row row-cols-1 row-cols-md-4 g-4 my-3">
-                    <div
-                        class="col-lg-3 col-sm-3 col-md-3 text-center d-flex flex-column justify-content-center align-items-center">
-                        <i class="fa-solid dimens-counter-icons fa-user"></i>
-                        <h2 class="stats counter">150</h2>
-                        <p class="text-muted">Étudiants</p>
-                    </div>
-                    <div
-                        class="col-lg-3 col-sm-3 col-md-3 text-center d-flex flex-column justify-content-center align-items-center">
-                        <i class="fa-solid dimens-counter-icons fa-users"></i>
-                        <h2 class="stats counter">5</h2>
-                        <p class="text-muted">Groupes</p>
-                    </div>
-                    <div
-                        class="col-lg-3 col-sm-3 col-md-3 text-center d-flex flex-column justify-content-center align-items-center">
-                        <i class="fa-solid dimens-counter-icons fa-puzzle-piece"></i>
-                        <h2 class="stats counter">8</h2>
-                        <p class="text-muted">Matières</p>
-                    </div>
-                    <div
-                        class="col-lg-3 col-sm-3 col-md-3 text-center d-flex flex-column justify-content-center align-items-center">
-                        <i class="fa-solid dimens-counter-icons fa-money-bill"></i>
-                        <h2 class="stats counter">3</h2>
-                        <p class="text-muted">Bourses d'études</p>
-                    </div>
-                </div>
-                <div class="d-flex flex-column align-items-center justify-content-center my-5">
-                    <h2 class="my-5">Témoignage</h2>
-                    <img src="./assets/NyHasina.jpg" alt="" class="quote-pfp">
-                    <h3>Ny Hasina</h3>
-                    <p class="text-muted">Aspirant developpeur Backend</p>
-                    <blockquote>Aucun mot ne suffit pour décrire la superbe aventure vécue chez HEI</blockquote>
-                </div>
-            </section>
 
-            <!-- Team -->
-            <section class="bg-white text-center d-flex align-items-center justify-content-center flex-column py-5"
-                id="team-ab">
-                <h2 class="fade-scroll-ab fs-1" data-fade-show="0s">Un aperçu de l’équipe pédagogique</h2>
-                <p class="w-75 fade-scroll-ab fs-5" data-fade-show=".2s">Soyez formé par nos meilleurs enseignants.</p>
-
-                <!-- classement d'image -->
-                <div class="container mt-4">
-                    <div class="row justify-content-around w-100 m-0">
-
-                        <div class="py-4 px-3 col-lg-3 col-sm-5 d-flex flex-column align-items-center justify-content-between hover-shadow-ab fade-scroll-ab"
-                            data-fade-show=".1s">
-                            <div>
-                                <img class="rounded-circle team-img-area-ab" src="./assets/Tahina-OK.png" alt="">
-                                <h3 class="fs-3">Tahina Ralitera</h3>
-                                <p class="fs-6">Docteure-Ingénieure, CEA, Saclay | Prix L'Oréal-UNESCO pour les Femmes
-                                    en
-                                    Science (2017)</p>
-                            </div>
-                            <nav class="w-100">
-                                <ul class="nav justify-content-center gap-3 w-100">
-                                    <li> <a href="#" class="btn-link-ico-ab">
-                                            <i class="fa-brands fa-facebook"></i>
-                                        </a> </li>
-                                    <li> <a href="#" class="btn-link-ico-ab">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a> </li>
-                                    <li> <a href="#" class="btn-link-ico-ab">
-                                            <i class="fa-brands fa-linkedin"></i>
-                                        </a> </li>
-                                </ul>
-                            </nav>
-                        </div>
-
-                        <div class="py-4 px-3 col-lg-3 col-sm-5 d-flex flex-column align-items-center justify-content-between hover-shadow-ab fade-scroll-ab"
-                            data-fade-show=".3s">
-                            <div>
-                                <img class="rounded-circle team-img-area-ab" src="./assets/Yannick.png" alt="">
-                                <h3 class="fs-3">Yannick Raharijaona</h3>
-                                <p class="fs-6">ML Tech Lead, Rocket Science, Ottawa</p>
-                            </div>
-                            <nav class="w-100">
-                                <ul class="nav justify-content-center gap-3 w-100">
-                                    <li> <a href="#" class="btn-link-ico-ab">
-                                            <i class="fa-brands fa-facebook"></i>
-                                        </a> </li>
-                                    <li> <a href="#" class="btn-link-ico-ab">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a> </li>
-                                    <li> <a href="#" class="btn-link-ico-ab">
-                                            <i class="fa-brands fa-linkedin"></i>
-                                        </a> </li>
-                                </ul>
-                            </nav>
-                        </div>
-
-                        <div class="py-4 px-3 col-lg-3 col-sm-5 d-flex flex-column align-items-center justify-content-between hover-shadow-ab fade-scroll-ab"
-                            data-fade-show=".5s">
-                            <div>
-                                <img class="rounded-circle team-img-area-ab" src="./assets/Parison.png" alt="">
-                                <h3 class="fs-3">Parison Ravalomanda</h3>
-                                <p class="fs-6">Ingénieur logiciel, Google, Londres</p>
-                            </div>
-                            <nav class="w-100">
-                                <ul class="nav justify-content-center gap-3 w-100">
-                                    <li> <a href="#" class="btn-link-ico-ab">
-                                            <i class="fa-brands fa-facebook"></i>
-                                        </a> </li>
-                                    <li> <a href="#" class="btn-link-ico-ab">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a> </li>
-                                    <li> <a href="#" class="btn-link-ico-ab">
-                                            <i class="fa-brands fa-linkedin"></i>
-                                        </a> </li>
-                                </ul>
-                            </nav>
-                        </div>
-
-                        <div class="py-4 px-3 col-lg-3 col-sm-5 d-flex flex-column align-items-center justify-content-between hover-shadow-ab fade-scroll-ab"
-                            data-fade-show=".7s">
-                            <div>
-                                <img class="rounded-circle team-img-area-ab" src="./assets/Sandrine-OK.png" alt="">
-                                <h3 class="fs-3">Sandrine Ramaroson</h3>
-                                <p class="fs-6">Ex-directrice technique, Vanilla Pay, Antananarivo | Révélation Fintech
-                                    de
-                                    Women In Africa (2020)</p>
-                            </div>
-                            <nav class="w-100">
-                                <ul class="nav justify-content-center gap-3 w-100">
-                                    <li> <a href="#" class="btn-link-ico-ab">
-                                            <i class="fa-brands fa-facebook"></i>
-                                        </a> </li>
-                                    <li> <a href="#" class="btn-link-ico-ab">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a> </li>
-                                    <li> <a href="#" class="btn-link-ico-ab">
-                                            <i class="fa-brands fa-linkedin"></i>
-                                        </a> </li>
-                                </ul>
-                            </nav>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-        </div>
-
-
-        <!-- À ne pas changer son emplacements -->
-        <div class="loader-container-ab">
-            <div class="fadeLoad-ab">
-                <i></i>
-                <i></i>
-                <i></i>
-                <i></i>
+        <!-- statistique  -->
+        <section id="stats">
+            <div class="text-center px-3">
+                <h1 class="display-3 fw-bold scroll-anim"  data-type-anim="scaleFade" data-delay=".2s">Statistiques</h1>
+                <p class="fs-3 scroll-anim"  data-type-anim="fadeIn" data-delay=".3s">Les statistiques de développement de HEI</p>
             </div>
-        </div>
-        <!-- Miijack's Section -->
-        <section id="contact">
-            <div class="container-fluid bg-white pb-5">
-                <!-- No animation on this part -->
-                <div class="row fade-scroll-ab" data-fade-show=".3s">
-                    <div class="col col-lg-12">
-                        <h2>Restez en contact avec nous</h2>
-                        <p class="top">Bienvenue dans notre université ! Nous sommes heureux de vous accueillir et nous
-                            sommes toujours prêts à vous aider.
-                            <br>N'hésitez pas à nous contacter pour toute question ou préoccupation.
-                        </p>
-                    </div>
-                </div>
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
 
-                <div class="row justify-content-center fade-scroll-ab" data-fade-show=".5s">
-                    <div class="col col-lg-3 col-sm-4 col-md-4">
-                        <article>
-                            <i class="fa-solid fa-location-pin"></i>
-                            <h3>Address</h3>
-                            <span>II J 161 R Ambodivoanjo Ivandry <br> 101, Antananarivo</span>
-                        </article>
+                    <div class="d-flex flex-column justify-content-center col-lg-3 col-sm-3 text-center p-3 gap-1">
+                        <i class="fa-solid fa-user display-4"></i>
+                        <span class="fs-3 scroll-anim"  data-type-anim="counter" data-count="150">0</span>
+                        <h4>Étudiants</h4>
                     </div>
-
-                    <div class="col col-lg-3 col-sm-4 col-md-4">
-                        <article>
-                            <i class="fa-solid fa-envelope"></i>
-                            <h3>E-mail</h3>
-                            <span>contact@hei.school</span>
-                        </article>
+                    <div class="d-flex flex-column justify-content-center col-lg-3 col-sm-3 text-center p-3 gap-1">
+                        <i class="fa-solid fa-users display-4"></i>
+                        <span class="fs-3 scroll-anim"  data-type-anim="counter" data-count="5">0</span>
+                        <h4>Clubs</h4>
                     </div>
-
-                    <div class="col col-lg-3 col-sm-4 col-md-4">
-                        <article>
-                            <i class="fa-solid fa-square-phone"></i>
-                            <h3>Phone</h3>
-                            <span>+261 34 94 041 16</span>
-                        </article>
+                    <div class="d-flex flex-column justify-content-center col-lg-3 col-sm-3 text-center p-3 gap-1">
+                        <i class="fa-solid fa-puzzle-piece display-4"></i>
+                        <span class="fs-3 scroll-anim"  data-type-anim="counter" data-count="8">0</span>
+                        <h4>Matières</h4>
                     </div>
-
+                    <div class="d-flex flex-column justify-content-center col-lg-3 col-sm-3 text-center p-3 gap-1">
+                        <i class="fa-solid fa-money-bill display-4"></i>
+                        <span class="fs-3 scroll-anim" data-type-anim="counter" data-count="3">0</span>
+                        <h4>Bourses</h4>
+                    </div>
 
                 </div>
+            </div>
+        </section>
 
-                <div class="row fade-scroll-ab" data-fade-show=".9s">
-                    <div class="col col-lg-12">
-                        <form>
-                            <input type="text" placeholder="Email">
-                            <textarea placeholder="Message"></textarea>
-                            <a href="#">Envoyer Message</a>
-                        </form>
-                    </div>
+        <!-- temoingnage -->
+        <section class="text-center py-3 d-flex align-items-center flex-column justify-content-center scroll-anim"  data-type-anim="fadeIn" data-delay=".2s">
+            <img class="rounded-circle img-temoignage-vk m-2" src="assets/NyHasina.jpg" alt="Ny Hasina en L2">
+            <h2 class="fs-4">Ny Hasina</h2>
+            <p>Aspirant developpeur back-end</p>
+            <span class="inner_blockquote mb-4">Aucun mot ne suffit pour décrire la superbe aventure vécue chez HEI</span>
+        </section>
+        
+        <!-- contact  -->
+        <section id="contact" class="container py-4">
+            <div class="text-center py-4">
+                <h1 class="display-3 fw-bold scroll-anim"  data-type-anim="scaleFade" data-delay=".2s">Restez en contact avec nous</h1>
+                <p class="fs-5 scroll-anim"  data-type-anim="fadeIn" data-delay=".3s">Bienvenue dans notre université ! Nous sommes heureux de vous accueillir et nous sommes toujours prêts à vous aider.</p>
+            </div>
+            <div class="container py-4">
+                <div class="row justify-content-center">
+
+                    <article class="col col-lg-3 text-center scroll-anim"  data-type-anim="fadeIn" data-delay=".2s">
+                        <i class="fa-solid fa-xl fa-location-pin"></i>
+                        <h3 class="fw-bold">Addresse</h3>
+                        <span>II J 161 R Ambodivoanjo Ivandry, 101, Antananarivo</span>
+                    </article>
+
+                    <article class="col col-lg-3 text-center scroll-anim"  data-type-anim="fadeIn" data-delay=".3s">
+                        <i class="fa-solid fa-xl fa-envelope"></i>
+                        <h3 class="fw-bold">E-mail</h3>
+                        <span>contact@hei.school</span>
+                    </article>
+
+                     <article class="col col-lg-3 text-center scroll-anim"  data-type-anim="fadeIn" data-delay=".4s">
+                        <i class="fa-solid fa-xl fa-square-phone"></i>
+                        <h3 class="fw-bold">Phone</h3>
+                        <span>+261 34 94 041 16</span>
+                    </article>
+
+                </div>
+
+                <div class="row justify-content-center my-3 scroll-anim"  data-type-anim="fadeIn" data-delay=".5s">
+                    <form class="col-lg-6 d-flex flex-column gap-3 form-mir mt-3">
+                        <input type="email" placeholder="Email" class="rounded fs-6" required>
+                        <textarea cols="30" rows="10" placeholder="Message" class="rounded fs-6"></textarea>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <button type="submit" class="btn btn-secondary w-fit-content fs-4">Envoyer un message</button>
+                        </div>
+                    </form>
                 </div>
 
             </div>
@@ -701,70 +488,68 @@
     </main>
 
     <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col col-lg-12 text-center">
-                    <h2>Nous rejoindre</h2>
-                    <p class="top">Nous recrutons de nouveaux groupes tout au long de l`année. <br>
-                        Inscrivez-vous sur le lien ci-dessous et nous vous informerons de la date de la prochaine
-                        rentrée.</p>
-                </div>
-            </div>
+        <div class="d-flex flex-column text-center py-4 px-3 align-items-center justify-content-center">
+            <h1 class="display-4 text-white-gp">Nous rejoindre</h1>
+            <p class="fs-5 py-0 text-white-gp">Nous recrutons de nouveaux groupes tout au long de l`année.</p>
+            <p class="py-0 text-white-gp">En cliquant sur le lien ci-dessous et nous vous informerons de la date de la prochaine rentrée.</p>
+            <a href="#!" class="btn btn-outline-warning fs-4">Inscrivez-vous ici</a>
+        </div>
+        <div class="container pb-5 pt-3">
+            <div class="row justify-content-around text-white-gp pb-5">
 
-            <div class="row">
-                <div class="col col-lg- text-center">
-                    <div class="mesg mx-auto">
-                        <button>Inscrivez-vous ici!</button>
-                    </div>
-                </div>
-            </div>
+                <article class="col-lg-2 col-md-4">
+                    <p class="fs-6">II J 161 R, Ambodivoanjo Ivandry</p>
+                    <p class="fs-6">101, Antananarivo</p>
+                    <p class="fs-6">contact@hei.school</p>
+                    <p class="fs-6">+261 34 94 041 16</p>
+                </article>
 
-            <div class="row">
-                <div class="col col-lg-4 col-sm-4 col-md-4">
-                    <address>
-                        II J 161 R Ambodivoanjo Ivandry <br>
-                        101, Antananarivo<br>
-                        contact@hei.school<br>
-                        +261 34 94 041 16
-                    </address>
-                </div>
-                <div class="col col-lg-8 col-sm-8 col-md-8">
-                    <div class="row">
-                        <div class="col col-lg-3 col-sm-6 col-md-3">
-                            <a href="https://hei.school/events/">Évènements</a>
-                            <a href="https://bit.ly/programmepedagogiqueHEI2022">Programmes</a>
-                            <a href="http://calendar.hei.school/">Calendar</a>
-                            <a href="https://hei.school/case-studies/">Case studies</a>
-                        </div>
-                        <div class="col col-lg-3 col-sm-6 col-md-3">
-                            <a href="http://www.alliancefr.mg/">Alliance Française</a>
-                        </div>
-                        <div class="col col-lg-3 col-sm-6 col-md-3">
-                            <a href="#formations">Formations</a>
-                            <a href="#parcours">Parcours</a>
-                            <a href="#team-ab">Notre équipe</a>
-                            <a href="#statistics">Statistics</a>
-                        </div>
-                        <div class="col col-lg-3 col-sm-6 col-md-3">
-                            <a href="#contact">Contact</a>
-                            <a href="#home-ab">Home</a>
-                        </div>
-                    </div>
-                </div>
+                <nav class="col-lg-2 col-md-4">
+                    <ul class="nav flex-column">
+                        <li><a href="#event" class="link-white-gp fs-6">Évènements</a></li>
+                        <li><a href="https://calendar.hei.school" class="link-white-gp fs-6">Emploi du temps</a></li>
+                        <li><a href="#!" class="link-white-gp fs-6">Programmes</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="col-lg-2 col-md-4">
+                    <ul class="nav flex-column">
+                        <li><a href="https://www.alliancefr.mg" class="link-white-gp fs-6">Alliance française</a></li>
+                        <li><a href="#!" class="link-white-gp fs-6">Partenaires</a></li>
+                        <li><a href="#!" class="link-white-gp fs-6">Support</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="col-lg-2 col-md-4">
+                    <ul class="nav flex-column">
+                        <li><a href="#formations" class="link-white-gp fs-6">Formations</a></li>
+                        <li><a href="#parcours" class="link-white-gp fs-6">Parcours</a></li>
+                        <li><a href="#team" class="link-white-gp fs-6">Notre équipe</a></li>
+                        <li><a href="#stats" class="link-white-gp fs-6">Statistiques</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="col-lg-2 col-md-4">
+                    <ul class="nav flex-column">
+                        <li><a href="https://hei.admin.school" class="link-white-gp fs-6">Admin</a></li>
+                        <li><a href="#home" class="link-white-gp fs-6">Accueil</a></li>
+                        <li><a href="#contact" class="link-white-gp fs-6">Contact</a></li>
+                    </ul>
+                </nav>
+
             </div>
         </div>
     </footer>
-    <script src="./js/jquery-3.6.3.min.js"></script>
-    <!-- Javascript for the stats counter | Kirisaki_VK -->
-    <script src="./js/jquery.waypoints.js"></script>
-    <script src="./js/jquery.rcounter.js"></script>
-    <script src="./js/kirisaki-vk_counter.js"></script>
-    <!-- Javascript for the more to show up on Hover -->
-    <script src="./js/kirisaki-vk_more.js"></script>
-    <!-- ___  -->
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/fallback.js"></script>
-    <script src="./js/app.js"></script>
-</body>
 
+    <!-- loader  -->
+    <div class="loader-container-ab">
+        <div class="fadeLoad-ab">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+
+</body>
 </html>
