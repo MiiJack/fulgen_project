@@ -98,3 +98,7 @@
 :root{
     --Yellow-hei : #fcaf3b;
 }
+
+.title-hei{
+    font-family: 'EB Garamond';
+}
