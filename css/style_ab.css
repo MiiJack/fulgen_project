@@ -268,22 +268,6 @@
     }
 }
 
-.fade-scroll-ab{
-    opacity: 0;
-}
-.actived-ab{
-    animation-name: fade-scroll;
-    animation-duration: .3s;
-    animation-direction: normal;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
-}
-@keyframes fade-scroll {
-    100%{
-        opacity: 1;
-    }
-}
 
 .nav-appear-ab{
     display: none !important;

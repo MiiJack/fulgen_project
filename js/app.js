@@ -11,12 +11,7 @@ $(window).on("scroll",function() {
             $('header').addClass("marginize-top-ab");
         }, 100);
     }
-    $(".fade-scroll-ab").each((i,element)=>{
-        if($(win).scrollTop() - ($(element).offset().top/2) >= -50){
-            element.classList.add('actived-ab')
-            element.style.animationDelay = $(element).attr("data-fade-show")
-        }
-    })
+    scrollInit(".scroll-aniation-gp",$(window).scrollTop())
 });
 
 
@@ -62,3 +57,15 @@ $(".width-side-ab").each(function(i,element){
 $(".fade-animation-showing-ab").each(function(i,elem){
     elem.style.animationDelay =  $(elem).attr("data-fade-show")
 })
+
+
+
+function scrollInit(e,container){
+    let scrollTriggerAnim = [...document.querySelectorAll(".scroll-aniation-gp")];
+    scrollTriggerAnim.forEach((value,i,element)=>{
+        if(container >= (element[i].getBoundingClientRect().top*4)){
+            element[i].classList.add($(element[[i]]).attr("data-type-anim"))
+            element[i].style.animationDelay = $(element[i]).attr("data-fade-show")
+        }
+    })
+}
