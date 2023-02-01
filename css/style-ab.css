@@ -1,0 +1,144 @@
+header { transition: .2s;}
+.header-hei-logo-ab{
+    width: 2.2cm;
+    height: 1.6cm;
+    object-fit: cover;
+}
+.fond-hei-ab{
+    background: url(../assets/bg-img.jpg) no-repeat center/cover fixed;
+}
+.fond-hei-ab::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.7);
+    backdrop-filter: blur(3px);
+}
+.title-hei{
+    font-family: "EB Garamond" !important;
+}
+.btn-header-ab,.btn-link-ico-ab{
+    color: var(--Yellow-hei);
+}
+.btn-header-ab:hover,.btn-link-ico-ab:hover{
+    color: gold;
+}
+.team-img-area-ab{
+    width: 25vmin;
+    height: 25vmin;
+    min-width: 110px;
+    min-height: 110px;
+    object-fit: cover;
+}
+.hover-shadow-ab{
+    transition: .4s;
+}
+.hover-shadow-ab:hover{
+    transition: .2s;
+    transform: scale(1.02);
+    box-shadow: 0 0 1vmin 0.2vmin rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+.border-b-ab{
+    border-bottom: 0.4vmin solid grey;
+}
+.text-nav-link-ab{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: black !important;
+}
+.text-nav-link-ab > a{
+    z-index: 1;
+}
+.text-nav-link-ab::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--Yellow-hei);
+    transition: .3s;
+    border-radius: 0  8vmin 8vmin 0;
+}
+.text-nav-link-ab:hover::after{
+    width: 100%;
+    border-radius: 0;
+}
+.loader-container-ab{
+    position: fixed;
+    top: 0;
+    z-index: 60000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+.fadeLoad-ab i{
+    display: inline-block;
+    min-height: 20px;
+    min-width: 20px;
+    width: 4vmin;
+    height: 4vmin;
+    background: var(--Yellow-hei);
+    border-radius: 50%;
+}
+.fadeLoad-ab i:first-child{
+    opacity: 0;
+	animation: firstDotLoading 0.58s linear infinite;
+	transform:translate(var(--translateF-dot));
+}
+.fadeLoad-ab i:nth-child(2){
+    transform: translate(-0.5vmin);
+    animation:midDotLoading1 0.58s linear infinite;
+}
+.fadeLoad-ab i:nth-child(3){
+    transform: translate(-0.5vmin);
+    animation:midDotLoading2 0.58s linear infinite;
+}
+.fadeLoader-ab{
+    transition: .3s;
+    opacity: 0;
+}
+.fadeLoad-ab i:last-child{
+    animation: lastDotLoading 0.58s linear infinite;
+}
+
+@keyframes firstDotLoading{
+	100%{
+		opacity: 1;
+		transform:translate(var(--anim-dot));
+	}
+}
+@keyframes midDotLoading1{
+    100%{
+        opacity: 1;
+		transform:translate(var(--anim-dot));
+	}
+}
+@keyframes midDotLoading2{
+    100%{
+        opacity: 0.6;
+		transform:translate(3vmin);
+	}
+}
+@keyframes  lastDotLoading{
+    100%{
+		opacity: 0;
+        transform:translate(4vmin);
+    }
+}
+
+@keyframes show {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+ 
+:root{
+    --anim-dot : 2vmin;
+    --translateF-dot : -2vmin;
+}

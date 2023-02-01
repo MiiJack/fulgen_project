@@ -1,0 +1,15 @@
+.form-mir > input, .form-mir > textarea{
+    border: 0.15rem solid black;
+    padding: 1rem;
+    resize: none;
+    color: black;
+}
+.form-mir > input::placeholder , .form-mir > textarea::placeholder{
+    color: inherit;
+}
+.form-mir > button{
+    width: fit-content;
+}
+footer{
+    background: black;
+}
