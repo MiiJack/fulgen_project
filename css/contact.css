@@ -1,0 +1,135 @@
+/* This could be a conflict */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+#contact {
+    text-align: center;
+}
+
+#contact i {
+    font-size: 22px;
+    color: #010101;
+}
+
+#contact h3 {
+    margin-top: 1em;
+    color: #010101;
+    margin-bottom: 5px;
+}
+
+#contact span {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 40px;
+}
+
+#contact form {
+    max-width: 30em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    outline: 0;
+    border: 2px solid #010101;
+    margin-bottom: 2em;
+    padding: 1em;
+    color: #010101;
+}
+
+#contact form textarea {
+    height: 12em;
+}
+
+#contact form a {
+    width: 10em;
+    height: 3em;
+    line-height: 3em;
+    background: #010101;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+#contact form a:hover {
+    background: var(--yellow-hei);
+    color: #010101;
+    transition: all 0.5s;
+}
+
+footer {
+    padding: 90px 0 12em;
+    background: #010101;
+}
+
+footer h2 {
+    color: #fff;
+}
+
+footer p.top {
+    margin-bottom: 35px;
+}
+
+p.top {
+    color: #898989;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 20px 0 70px;
+}
+
+.mesg {
+    max-width: 46em;
+    width: auto;
+    display: block;
+    margin: 0 auto 110px;
+}
+
+footer .mesg input {
+    width: 78%;
+    background: #fff;
+    border: 0;
+    padding: 1em;
+    outline: 0;
+    height: 3em;
+}
+
+footer .mesg button {
+    width: fit-content;
+    width: -moz-fit-content;
+    margin-left: 10px;
+    background: #fff;
+    border: 0;
+    outline: 0;
+    height: 52px;
+    line-height: 49px;
+    color: #010101;
+    font-weight: 700;
+    margin: auto;
+}
+
+footer .mesg button:hover {
+    background: var(--yellow-hei);
+}
+
+footer a,
+footer address {
+    display: block;
+    color: #fff;
+}
+
+footer a:hover {
+    color: var(--yellow-hei);
+}
+
+.active {
+    color: #999;
+}
